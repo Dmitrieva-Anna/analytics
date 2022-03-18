@@ -1,0 +1,76 @@
+.section-features
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+	&__subtitle
+		font-size: 40px
+		font-weight: 700
+		line-height: 47px
+		color: var(--theme-subtitle)
+
+.section-features-info
+	text-align: center
+	margin-top: 38px
+
+@media only screen and (max-width: 769px)
+	.section-features-info
+		text-align: left
+
+	.section-features
+
+		&__subtitle
+			font-size: 30px
+			line-height: 35px
+
+		&__text
+			font-size: 14px
+			line-height: 19px
+			margin-top: 20px
+
+.section-features-list
+	display: flex
+	justify-content: center
+	align-items: stretch
+	margin-top: 82px
+
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		gap: 27px
+		text-align: center
+
+@media only screen and (max-width: 769px)
+	.section-features-list
+		flex-direction: column
+		gap: 35px
+		margin-top: 40px
+
+		&__item
+			flex-direction: row
+			align-items: flex-start
+
+		&__option
+			text-align: start
+
+			&-title
+				color: var(--theme-subtitle)
+				font-size: 16px
+				font-weight: 700
+				line-height: 19px
+
+			&-description
+				margin-top: 9px
+				color: var(--theme-paragraph)
+
+@media only screen and (max-width: 428px)
+	.section-features-list
+		margin-top: 40px
+
+		&__item
+			align-items: flex-start
+
+		&__icon
+			flex: 0 0 25%

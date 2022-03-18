@@ -1,0 +1,11 @@
+<!--START statisticCard-->
+@@for (var i = 0; i < cardItems.length; i++) {
+	<div class="statistic-card `+cardItems[i].reverse+`">
+		<div class="statistic-card__description">
+			<h2 class="title-middle">`+cardItems[i].title+`</h2>
+			<div class="text">`+cardItems[i].text+`</div>
+		</div>
+		<img class="statistic-card__description-image `+cardItems[i].reverseImg+`" src="`+cardItems[i].image+`" alt="calendar">
+	</div>
+}
+<!--END statisticCard-->

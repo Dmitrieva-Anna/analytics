@@ -1,0 +1,30 @@
+.button
+	+button()
+
+	&--registration
+		--borderColor: var(--color-blue-thin)
+		--colorButton: var(--color-blue-thin)
+		--width: 161px
+		&:hover
+			--borderColor: var(--color-pink)
+
+	&--pink
+		margin-top: 49px
+		--backgroundColor: var(--color-pink)
+		--width: 238px
+		--height: 50px
+		&:hover
+			--backgroundColorHover: transparent
+			--borderColor: var(--color-blue-thin)
+
+		@media screen and (max-width: 768px)
+			margin-top: 26px
+
+
+	&--order
+		--borderColor: var(--color-blue-thin)
+		--width: 100%
+		--height: 50px
+
+		&:hover
+			--borderColor: var(--color-pink)

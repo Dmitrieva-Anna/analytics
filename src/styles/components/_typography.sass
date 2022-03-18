@@ -1,0 +1,81 @@
+.title
+	+fontFontRemaster
+	--fontSize: 50px
+	--fontWeight: 700
+	--fontFontColor: var(--theme-title)
+	margin-bottom: 15px
+
+	@media screen and (max-width: 1024px)
+		--fontSize: 31px
+
+	&--bottom
+		--fontSize: 40px
+		margin-bottom: 30px
+		@media screen and (max-width: 768px)
+			--fontSize: 30px
+			margin-bottom: 20px
+	&--card
+		--fontSize: 30px
+		--fontWeight: 700
+		margin-bottom: 0
+		transition: color 0.35s linear 0.175s
+		@media screen and (max-width: 768px)
+			--fontSize: 25px
+
+.text
+	+fontFontRemaster
+	--fontSize: 18px
+	--fontFontColor: var(--color-blue-thin)
+	--textPadding: 0
+	padding: var(--textPadding)
+	@media screen and (max-width: 768px)
+		--fontSize: 14px
+
+	&--option
+		--fontSize: 16px
+		@media screen and (max-width: 768px)
+			--fontSize: 14px
+
+	&--title
+		margin-bottom: 15px
+		--fontSize: 16px
+		--fontWeight: 700
+		--fontFontColor: var(--color-blue-medium)
+		transition: color 0.35s linear 0.175s
+		@media screen and (max-width: 768px)
+			margin-bottom: 0
+
+	&--card
+		--textPadding: 0 0 40px
+		transition: color 0.35s linear 0.175s
+	&--mini
+		--fontSize: 16px
+		text-align: center
+		transition: color 0.35s linear 0.175s
+
+	&--dollar
+		--fontSize: 30px
+		--fontWeight: 700
+		--fontFontColor: var(--color-white)
+		transition: 0.35s linear 0.175s
+
+	&--number
+		--fontSize: 60px
+		--fontWeight: 700
+		--fontFontColor: var(--color-white)
+		transition: color 0.35s linear 0.175s
+	&--bottom
+		text-align: center
+		@media screen and (max-width: 767px)
+			text-align: left
+
+.title-middle
+	margin-bottom: 30px
+	+fontFontRemaster
+	--fontSize: 40px
+	--fontWeight: 700
+	--fontFontColor: var(--theme-subtitle)
+
+	@media screen and (max-width: 768px)
+		margin-bottom: 20px
+		--fontSize: 30px

@@ -1,0 +1,27 @@
+.footer
+	background-color: var(--theme-subtitle)
+	padding-bottom: 111px
+
+.footer-menu
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding-top: 69px
+
+	&__social
+		display: flex
+		gap: 40px
+
+	&__icon
+		transition: 1s
+		&:hover
+			transform: scale(1.5)
+
+@media only screen and (max-width: 1024px)
+	.footer-menu
+		justify-content: space-around
+
+@media only screen and (max-width: 425px)
+	.footer-menu
+		flex-direction: column
+		gap: 36px

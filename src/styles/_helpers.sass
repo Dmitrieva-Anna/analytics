@@ -1,0 +1,70 @@
+//fontFont
+//Определения параметров шрифта
+//fontSize - размер шрифта
+//fontWeight - толщина
+//fontFontColor - цвет шрифта
+//lineHeight - размер шрифта + модификатор
+//=fontFont($size, $weight: 400, $lineHeight: 8px, $color: blue)
+//	--fontSize: #{$size}
+//	--lineHeightMod: #{$lineHeight}
+//	--lineHeight: calc(var(--fontSize) + var(--lineHeightMod))
+//
+//	font-size: $size
+//	font-weight: $weight
+//	line-height: var(--lineHeight)
+//	color: $color
+
+=fontFontRemaster()
+	--fontSize: 14px
+	--lineHeightMod: 8px
+	--lineHeight: calc(var(--fontSize) + var(--lineHeightMod))
+	--fontWeight: 400
+	--fontFontColor: var(--theme-paragraph)
+
+	font-size: var(--fontSize)
+	font-weight: var(--fontWeight)
+	line-height: var(--lineHeight)
+	color: var(--fontFontColor)
+
+//button
+//Определение параметров кнопки
+//colorButton - цвет текста кнопки
+//backgroundColor - цвета фона
+//backgroundColorHover - цвет фона при наведении
+//colorHover - цвет текста при наведении
+//borderColor - цвет рамки
+//borderRadius - закругление рамки
+//cursor - изменение курсора при наведении
+//width - ширина
+//height - высота
+
+=button()
+	--colorButton: var(--color-white)
+	--backgroundColor: transparent
+	--backgroundColorHover: var(--color-pink)
+	--colorHover: var(--color-white)
+	--borderColor: var(--backgroundColor)
+	--borderRadius: 40px
+	--cursor: pointer
+	--width: auto
+	--height: 40px
+
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	height: var(--height)
+	+fontFontRemaster()
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	color: var(--colorButton)
+	border-radius: var(--borderRadius)
+	//padding: 0 16px
+	cursor: var(--cursor)
+	background-color: var(--backgroundColor)
+	border: 1px solid var(--borderColor)
+	width: var(--width)
+	transition: color 0.25s linear .125s, border .25s linear .125s, background-color .25s linear .125s
+
+	&:hover
+		background-color: var(--backgroundColorHover)
+		color: var(--colorHover)

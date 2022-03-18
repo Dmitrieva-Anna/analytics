@@ -1,0 +1,19 @@
+<!--START priceCard-->
+@@for (var i = 0; i < cardPrice.length; i++) {
+<div class="price-plan__cards-item">
+	<div class="price-plan__cards-description">
+		<div class="title title--card">`+cardPrice[i].title+`</div>
+		<div class="text text--card">`+cardPrice[i].text+`</div>
+	</div>
+	<div class="price-plan__cards-price">
+		<span class="text text--dollar">`+cardPrice[i].priceDollar+`</span>
+		<span class="text text--number">`+cardPrice[i].priceNumber+`</span>
+		<div class="text text--mini">`+cardPrice[i].textMini+`</div>
+	</div>
+	@@include('../button/_button.html', {
+	name: 'Order',
+	modification: 'button--order'
+	})
+</div>
+}
+<!--END priceCard-->

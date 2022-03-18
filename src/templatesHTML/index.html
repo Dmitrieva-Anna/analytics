@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Analytics</title>
+</head>
+<body>
+
+@@include('./header/_header.html')
+<!--START main-->
+<main class="main">
+	<!--START section-features-->
+	<section class="section-features container">
+		<div class="section-features-info">
+			<h2 class="title-middle">Main Features</h2>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
+				aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+				Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.</p>
+		</div>
+		<div class="section-features-list">
+			@@include('./features/_features.html', {"featuresItems": [{
+			image: '../img/template/clock.svg',
+			title: 'Monitoring 24/7',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.',
+			},
+			{
+			image: '../img/template/monitor.svg',
+			title: 'Widget System',
+			text: 'Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar.',
+			},
+			{
+			image: '../img/template/rocket.svg',
+			title: 'Best Performance',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.',
+			}]})
+		</div>
+	</section>
+	<!--END section-features-->
+
+	<!--START statistic-->
+	<section class="statistic container">
+				@@include('./statisticCard/_statisticCard.html', {"cardItems": [{
+				title: 'Automated Report & Widget Alerts',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.',
+				image: '../img/template/interest.png',
+				reverse: '',
+				reverseImg: ''
+				},
+				{
+				title: 'Fully customizable to address your needs',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.',
+				image: '../img/template/schedule.png',
+				reverse: 'statistic-card-revers',
+				reverseImg: 'statistic-card__description-image--reverse'
+				},
+				{
+				title: 'Pre-built Dashboard Templates',
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.',
+				image: '../img/template/calendar.png',
+				reverse: '',
+				reverseImg: ''
+				}]})
+	</section>
+	<!--END statistic-->
+
+	<!--START price-->
+	<section class="price">
+		<div class="price-plan container">
+			<div class="price-plan__description">
+				<h2 class="title title--bottom">Pricing Plans</h2>
+				<div class="text text--bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum nisi aliquet <br/> volutpat pellentesque volutpat est.
+				</div>
+			</div>
+			<div class="price-plan__cards">
+				@@include('./priceCard/_priceCard.html', {"cardPrice": [{
+				title: 'Starter',
+				text: 'up to 3 users',
+				priceDollar: '$',
+				priceNumber: '29',
+				textMini: 'per month'
+				},
+				{
+				title: 'Standard',
+				text: 'up to 20 users',
+				priceDollar: '$',
+				priceNumber: '99',
+				textMini: 'per month'
+				},
+				{
+				title: 'Premium',
+				text: 'up to 200 users',
+				priceDollar: '$',
+				priceNumber: '299',
+				textMini: 'per month'
+				}]})
+			</div>
+		</div>
+	</section>
+	<!--END price-->
+</main>
+<!--END main-->
+
+@@include('./footer/_footer.html')
+
+<!--START mobile menu-->
+<div class="mobile-navigation__shadow js-mobileShadow"></div>
+<div class="mobile-navigation__menu js-mobileMenu">
+	@@include('./navigation/_navigation.html', {"navList": ['Products', 'Pricing', 'FAQ', 'Blog', 'Blog'] })
+</div>
+<!--END mobile menu-->
+</body>
+<script src="js/script.js"></script>
+</html>
