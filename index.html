@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Analytics</title>
+</head>
+<body>
+
+<!--START header-->
+<header class="header">
+	<div class="header-navigation container">
+		<div class="header-navigation__menu">
+			<a class="header-logo" href="#">
+				<svg width="185" height="40" viewBox="0 0 185 40" fill="none"
+					 xmlns="http://www.w3.org/2000/svg">
+					<path d="M36.5083 8.70613C32.9048 3.44887 26.8551 0 20 0C8.9543 0 0 8.9543 0 20C0 21.607 0.189533 23.1697 0.547447 24.667L10.7322 14.4822C11.7085 13.5059 13.2915 13.5059 14.2678 14.4822L22.5 22.7145L36.5083 8.70613Z"
+						  fill="#EF2A82"/>
+					<path d="M38.8854 13.4001L24.2678 28.0178C23.2915 28.9941 21.7085 28.9941 20.7322 28.0178L12.5 19.7855L2.53418 29.7514C5.9555 35.8662 12.495 40 20 40C31.0457 40 40 31.0457 40 20C40 17.6874 39.6075 15.4664 38.8854 13.4001Z"
+						  fill="#EF2A82"/>
+					<path d="M62.8084 25.056H57.6023L56.6931 28H52.6343L58.4141 12.2408H61.9858L67.8089 28H63.7284L62.8084 25.056ZM58.5115 22.1228H61.8993L60.2 16.6569L58.5115 22.1228Z"
+						  fill="white"/>
+					<path d="M82.1285 28H78.3511L72.7661 18.1938V28H68.967V12.2408H72.7661L78.3402 22.047V12.2408H82.1285V28Z"
+						  fill="white"/>
+					<path d="M93.6772 25.056H88.4711L87.5619 28H83.5031L89.2829 12.2408H92.8546L98.6777 28H94.5972L93.6772 25.056ZM89.3803 22.1228H92.7681L91.0688 16.6569L89.3803 22.1228Z"
+						  fill="white"/>
+					<path d="M103.635 25.0776H110.248V28H99.8358V12.2408H103.635V25.0776Z" fill="white"/>
+					<path d="M114.588 19.0813L117.489 12.2408H121.591L116.515 22.3392V28H112.662V22.3392L107.596 12.2408H111.677L114.588 19.0813Z"
+						  fill="white"/>
+					<path d="M135.305 15.174H130.575V28H126.776V15.174H122.132V12.2408H135.305V15.174Z" fill="white"/>
+					<path d="M140.965 28H137.177V12.2408H140.965V28Z" fill="white"/>
+					<path d="M156.357 22.6639C156.306 23.7607 156.01 24.7312 155.469 25.5755C154.928 26.4125 154.167 27.0619 153.185 27.5237C152.211 27.9855 151.096 28.2164 149.841 28.2164C147.77 28.2164 146.139 27.5418 144.948 26.1924C143.758 24.8431 143.163 22.9381 143.163 20.4776V19.6983C143.163 18.1541 143.43 16.8048 143.964 15.6503C144.505 14.4885 145.28 13.5938 146.291 12.966C147.301 12.331 148.47 12.0135 149.797 12.0135C151.71 12.0135 153.247 12.5186 154.408 13.5288C155.57 14.5318 156.23 15.9173 156.389 17.6851H152.601C152.572 16.7254 152.33 16.0363 151.876 15.6178C151.421 15.1993 150.728 14.99 149.797 14.99C148.852 14.99 148.159 15.3436 147.719 16.0507C147.279 16.7579 147.048 17.8871 147.027 19.4385V20.5533C147.027 22.2346 147.236 23.436 147.654 24.1576C148.08 24.8792 148.809 25.24 149.841 25.24C150.714 25.24 151.381 25.0343 151.843 24.623C152.305 24.2117 152.55 23.5587 152.579 22.6639H156.357Z"
+						  fill="white"/>
+					<path d="M166.282 23.8112C166.282 23.2556 166.083 22.8227 165.686 22.5124C165.297 22.2021 164.608 21.881 163.619 21.5491C162.631 21.2172 161.822 20.8961 161.195 20.5858C159.153 19.5828 158.132 18.2046 158.132 16.4512C158.132 15.5781 158.384 14.8096 158.889 14.1458C159.402 13.4747 160.123 12.9552 161.054 12.5872C161.985 12.212 163.031 12.0244 164.193 12.0244C165.326 12.0244 166.339 12.2264 167.234 12.6305C168.136 13.0346 168.836 13.6118 169.334 14.3623C169.832 15.1055 170.081 15.9569 170.081 16.9166H166.293C166.293 16.2744 166.094 15.7765 165.697 15.423C165.308 15.0694 164.777 14.8926 164.106 14.8926C163.428 14.8926 162.89 15.0441 162.493 15.3472C162.104 15.6431 161.909 16.0219 161.909 16.4837C161.909 16.8878 162.125 17.2558 162.558 17.5877C162.991 17.9124 163.753 18.2515 164.842 18.6051C165.932 18.9515 166.827 19.3267 167.526 19.7308C169.229 20.7121 170.081 22.065 170.081 23.7896C170.081 25.1678 169.561 26.2502 168.522 27.0367C167.483 27.8232 166.058 28.2164 164.247 28.2164C162.97 28.2164 161.812 27.9891 160.773 27.5345C159.741 27.0727 158.961 26.445 158.435 25.6512C157.915 24.8503 157.655 23.9303 157.655 22.8912H161.465C161.465 23.7355 161.682 24.3596 162.115 24.7637C162.555 25.1606 163.266 25.359 164.247 25.359C164.875 25.359 165.369 25.2255 165.73 24.9585C166.098 24.6843 166.282 24.3019 166.282 23.8112Z"
+						  fill="white"/>
+				</svg>
+			</a>
+
+			<!-- START navigation -->
+<nav class="header-navigation-list header-navigation-list--bottom js-menuMove">
+	
+		<a class="navigation-link" href="javascript:;">Products</a>
+	
+		<a class="navigation-link" href="javascript:;">Pricing</a>
+	
+		<a class="navigation-link" href="javascript:;">FAQ</a>
+	
+		<a class="navigation-link" href="javascript:;">Blog</a>
+	
+		<a class="navigation-link" href="javascript:;">Blog</a>
+	
+</nav>
+<!-- END navigation -->
+
+		</div>
+		<div class="header-navigation__button">
+			<a class="entrance-link" href="#">Sign in</a>
+			<!--START button-->
+<button class="button button--registration">Sing Up</button>
+<!--END button-->
+		</div>
+		<div class="menu-burger js-menuTrigger">
+			<span class="menu-burger__line"></span>
+		</div>
+	</div>
+	<div class="container-bc">
+		<div class="header-info container">
+			<div class="header-general-pic">
+				<img class="header-general-img" src="../img/template/general_schedule.png">
+			</div>
+			<div class="header-info__title">
+				<div class="header-info__title-inner">
+					<h1 class="title">Monitor your business on real-time dashboard</h1>
+					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
+						aliquet volutpat <a href="javascript:;">pellentesque</a>
+						volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
+					<!--START button-->
+<button class="button button--pink">Try for free</button>
+<!--END button-->
+				</div>
+			</div>
+			<div class="header-circle-charts">
+			</div>
+		</div>
+	</div>
+	</div>
+</header>
+<!--END header-->
+<!--START main-->
+<main class="main">
+	<!--START section-features-->
+	<section class="section-features container">
+		<div class="section-features-info">
+			<h2 class="title-middle">Main Features</h2>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
+				aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+				Vitae et, tortor pulvinar risus pulvinar sit amet. Id vel in nam malesuada.</p>
+		</div>
+		<div class="section-features-list">
+			<!-- START features -->
+
+<div class="section-features-list__item">
+	<img class=class="section-features-list__icon" src="../img/template/clock.svg" alt="clock">
+	<div class="section-features-list__option">
+		<div class="text text--title">Monitoring 24/7</div>
+		<div class="text text--option">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.
+		</div>
+	</div>
+</div>
+
+<div class="section-features-list__item">
+	<img class=class="section-features-list__icon" src="../img/template/monitor.svg" alt="clock">
+	<div class="section-features-list__option">
+		<div class="text text--title">Widget System</div>
+		<div class="text text--option">Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar.
+		</div>
+	</div>
+</div>
+
+<div class="section-features-list__item">
+	<img class=class="section-features-list__icon" src="../img/template/rocket.svg" alt="clock">
+	<div class="section-features-list__option">
+		<div class="text text--title">Best Performance</div>
+		<div class="text text--option">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Elementum nisi aliquet volutpat.
+		</div>
+	</div>
+</div>
+
+<!-- END features -->
+		</div>
+	</section>
+	<!--END section-features-->
+
+	<!--START statistic-->
+	<section class="statistic container">
+				<!--START statisticCard-->
+
+	<div class="statistic-card ">
+		<div class="statistic-card__description">
+			<h2 class="title-middle">Automated Report & Widget Alerts</h2>
+			<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</div>
+		</div>
+		<img class="statistic-card__description-image " src="../img/template/interest.png" alt="calendar">
+	</div>
+
+	<div class="statistic-card statistic-card-revers">
+		<div class="statistic-card__description">
+			<h2 class="title-middle">Fully customizable to address your needs</h2>
+			<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</div>
+		</div>
+		<img class="statistic-card__description-image statistic-card__description-image--reverse" src="../img/template/schedule.png" alt="calendar">
+	</div>
+
+	<div class="statistic-card ">
+		<div class="statistic-card__description">
+			<h2 class="title-middle">Pre-built Dashboard Templates</h2>
+			<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar risus pulvinar sit amet.</div>
+		</div>
+		<img class="statistic-card__description-image " src="../img/template/calendar.png" alt="calendar">
+	</div>
+
+<!--END statisticCard-->
+	</section>
+	<!--END statistic-->
+
+	<!--START price-->
+	<section class="price">
+		<div class="price-plan container">
+			<div class="price-plan__description">
+				<h2 class="title title--bottom">Pricing Plans</h2>
+				<div class="text text--bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Elementum nisi aliquet <br/> volutpat pellentesque volutpat est.
+				</div>
+			</div>
+			<div class="price-plan__cards">
+				<!--START priceCard-->
+
+<div class="price-plan__cards-item">
+	<div class="price-plan__cards-description">
+		<div class="title title--card">Starter</div>
+		<div class="text text--card">up to 3 users</div>
+	</div>
+	<div class="price-plan__cards-price">
+		<span class="text text--dollar">$</span>
+		<span class="text text--number">29</span>
+		<div class="text text--mini">per month</div>
+	</div>
+	<!--START button-->
+<button class="button button--order">Order</button>
+<!--END button-->
+</div>
+
+<div class="price-plan__cards-item">
+	<div class="price-plan__cards-description">
+		<div class="title title--card">Standard</div>
+		<div class="text text--card">up to 20 users</div>
+	</div>
+	<div class="price-plan__cards-price">
+		<span class="text text--dollar">$</span>
+		<span class="text text--number">99</span>
+		<div class="text text--mini">per month</div>
+	</div>
+	<!--START button-->
+<button class="button button--order">Order</button>
+<!--END button-->
+</div>
+
+<div class="price-plan__cards-item">
+	<div class="price-plan__cards-description">
+		<div class="title title--card">Premium</div>
+		<div class="text text--card">up to 200 users</div>
+	</div>
+	<div class="price-plan__cards-price">
+		<span class="text text--dollar">$</span>
+		<span class="text text--number">299</span>
+		<div class="text text--mini">per month</div>
+	</div>
+	<!--START button-->
+<button class="button button--order">Order</button>
+<!--END button-->
+</div>
+
+<!--END priceCard-->
+			</div>
+		</div>
+	</section>
+	<!--END price-->
+</main>
+<!--END main-->
+
+<!--START footer-->
+<footer class="footer">
+	<div class="footer-menu container">
+		<div class="footer-menu__logo">
+			<a href="#">
+				<svg width="139" height="30" viewBox="0 0 139 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M27.3812 6.5296C24.6786 2.58665 20.1414 0 15 0C6.71573 0 0 6.71572 0 15C0 16.2052 0.14215 17.3773 0.410585 18.5003L8.04917 10.8617C8.78141 10.1294 9.96859 10.1294 10.7008 10.8617L16.875 17.0358L27.3812 6.5296Z"
+						  fill="#8794BA"/>
+					<path d="M29.1641 10.0501L18.2008 21.0133C17.4686 21.7456 16.2814 21.7456 15.5492 21.0133L9.375 14.8392L1.90063 22.3135C4.46662 26.8997 9.37125 30 15 30C23.2843 30 30 23.2843 30 15C30 13.2655 29.7056 11.5998 29.1641 10.0501Z"
+						  fill="#8794BA"/>
+					<path d="M47.1062 18.7921H43.2016L42.5197 21.0001H39.4756L43.8104 9.18073H46.4893L50.8566 21.0001H47.7962L47.1062 18.7921ZM43.8835 16.5922H46.4243L45.1498 12.4927L43.8835 16.5922Z"
+						  fill="#8794BA"/>
+					<path d="M61.5963 21.0001H58.7632L54.5745 13.6454V21.0001H51.7252V9.18073H54.5745L58.7551 16.5353V9.18073H61.5963V21.0001Z"
+						  fill="#8794BA"/>
+					<path d="M70.2578 18.7921H66.3532L65.6713 21.0001H62.6272L66.962 9.18073H69.6409L74.0082 21.0001H70.9478L70.2578 18.7921ZM67.0351 16.5922H69.5759L68.3015 12.4927L67.0351 16.5922Z"
+						  fill="#8794BA"/>
+					<path d="M77.7261 18.8083H82.686V21.0001H74.8768V9.18073H77.7261V18.8083Z" fill="#8794BA"/>
+					<path d="M85.9412 14.3111L88.1167 9.18073H91.1933L87.3861 16.7545V21.0001H84.4962V16.7545L80.6971 9.18073H83.7575L85.9412 14.3111Z"
+						  fill="#8794BA"/>
+					<path d="M101.478 11.3806H97.931V21.0001H95.0817V11.3806H91.5992V9.18073H101.478V11.3806Z"
+						  fill="#8794BA"/>
+					<path d="M105.724 21.0001H102.883V9.18073H105.724V21.0001Z" fill="#8794BA"/>
+					<path d="M117.267 16.998C117.229 17.8206 117.008 18.5485 116.602 19.1817C116.196 19.8095 115.625 20.2965 114.889 20.6429C114.158 20.9892 113.322 21.1624 112.38 21.1624C110.827 21.1624 109.604 20.6564 108.711 19.6444C107.818 18.6324 107.372 17.2037 107.372 15.3583V14.7738C107.372 13.6157 107.572 12.6037 107.973 11.7378C108.378 10.8665 108.96 10.1954 109.718 9.72461C110.475 9.24837 111.352 9.01025 112.348 9.01025C113.782 9.01025 114.935 9.38908 115.806 10.1467C116.677 10.899 117.173 11.938 117.292 13.2639H114.45C114.429 12.5441 114.247 12.0273 113.907 11.7134C113.566 11.3996 113.046 11.2426 112.348 11.2426C111.639 11.2426 111.119 11.5078 110.789 12.0381C110.459 12.5685 110.286 13.4154 110.27 14.579V15.4151C110.27 16.676 110.427 17.5771 110.741 18.1183C111.06 18.6595 111.607 18.9301 112.38 18.9301C113.035 18.9301 113.536 18.7758 113.882 18.4673C114.229 18.1589 114.413 17.6691 114.434 16.998H117.267Z"
+						  fill="#8794BA"/>
+					<path d="M124.711 17.8585C124.711 17.4418 124.562 17.1171 124.265 16.8844C123.972 16.6517 123.456 16.4109 122.714 16.1619C121.973 15.913 121.367 15.6722 120.896 15.4395C119.364 14.6872 118.599 13.6536 118.599 12.3385C118.599 11.6837 118.788 11.1073 119.167 10.6094C119.551 10.1061 120.092 9.71649 120.79 9.44049C121.488 9.15908 122.273 9.01837 123.144 9.01837C123.994 9.01837 124.754 9.1699 125.426 9.47296C126.102 9.77602 126.627 10.209 127 10.7718C127.374 11.3292 127.56 11.9678 127.56 12.6876H124.719C124.719 12.2059 124.57 11.8325 124.273 11.5673C123.981 11.3021 123.583 11.1696 123.08 11.1696C122.571 11.1696 122.168 11.2832 121.87 11.5105C121.578 11.7324 121.432 12.0165 121.432 12.3629C121.432 12.6659 121.594 12.9419 121.919 13.1909C122.243 13.4344 122.814 13.6887 123.632 13.9539C124.449 14.2137 125.12 14.4951 125.645 14.7982C126.922 15.5342 127.56 16.5489 127.56 17.8423C127.56 18.8759 127.171 19.6877 126.392 20.2776C125.612 20.8675 124.543 21.1624 123.185 21.1624C122.227 21.1624 121.359 20.9919 120.579 20.651C119.805 20.3046 119.221 19.8338 118.826 19.2385C118.436 18.6378 118.241 17.9478 118.241 17.1685H121.099C121.099 17.8017 121.261 18.2698 121.586 18.5729C121.916 18.8705 122.449 19.0193 123.185 19.0193C123.656 19.0193 124.027 18.9192 124.297 18.719C124.573 18.5133 124.711 18.2265 124.711 17.8585Z"
+						  fill="#8794BA"/>
+				</svg>
+			</a>
+		</div>
+
+		<!-- START navigation -->
+<nav class="header-navigation-list header-navigation-list--bottom js-menuMove">
+	
+		<a class="navigation-link" href="javascript:;">Products</a>
+	
+		<a class="navigation-link" href="javascript:;">Pricing</a>
+	
+		<a class="navigation-link" href="javascript:;">FAQ</a>
+	
+		<a class="navigation-link" href="javascript:;">Blog</a>
+	
+</nav>
+<!-- END navigation -->
+
+		<div class="footer-menu__social">
+			<!-- START social -->
+
+	<a class="footer-menu__icon" href="#">
+		<img src="./img/template/facebook.svg" alt="soc">
+	</a>
+
+	<a class="footer-menu__icon" href="#">
+		<img src="../img/template/twitter.svg" alt="soc">
+	</a>
+
+	<a class="footer-menu__icon" href="#">
+		<img src="../img/template/instagram.svg" alt="soc">
+	</a>
+
+<!-- END social -->
+		</div>
+	</div>
+</footer>
+<!--END footer-->
+
+<!--START mobile menu-->
+<div class="mobile-navigation__shadow js-mobileShadow"></div>
+<div class="mobile-navigation__menu js-mobileMenu">
+	<!-- START navigation -->
+<nav class="header-navigation-list header-navigation-list--bottom js-menuMove">
+	
+		<a class="navigation-link" href="javascript:;">Products</a>
+	
+		<a class="navigation-link" href="javascript:;">Pricing</a>
+	
+		<a class="navigation-link" href="javascript:;">FAQ</a>
+	
+		<a class="navigation-link" href="javascript:;">Blog</a>
+	
+		<a class="navigation-link" href="javascript:;">Blog</a>
+	
+</nav>
+<!-- END navigation -->
+</div>
+<!--END mobile menu-->
+</body>
+<script src="js/script.js"></script>
+</html>
